@@ -10,7 +10,7 @@ def index():
 
 @app.route('/hermanos')
 def pagHermanos():
-    lista  = ['hugo', 'rodolfo', 'adrian']
+    lista  = ['hugo', 'rodolfo', 'tadeo']
     return render_template('hermanos.html',hello = "hello world", lista = lista)
 
 #http://127.0.0.1:8000/params?param1=isidro&param2=rivera 
