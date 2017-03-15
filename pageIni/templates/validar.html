@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validar datos</title>
+</head>
+<body>
+<h1>hola {{nombre}} {{apellidos}} </h1>
+<p>
+    edad:{{edad}}
+    {% if edad < 18 %} 
+      (menor de edad)
+    {% else %}
+      (edad suficiente)
+    {% endif %}
+</p>
+<p>
+    hermanos<br>
+    {% for item in lista %}
+      No.- {{item}}<br>
+    {% endfor %}
+</p>
+</body>
+</html>

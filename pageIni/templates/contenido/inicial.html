@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Single Game Now</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/estilos.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/codigo.js') }}" ></script>
+</head>
+<body>
+  <img id="destacada" src="{{ url_for('static', filename='imgs/control1.png') }}">
+  <strong>{{ hello }}</strong>
+  {% block content %}
+   
+  {% endblock %}
+</body>
+</html>
