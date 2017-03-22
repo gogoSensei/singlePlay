@@ -43,6 +43,10 @@ def validar(nombre = 'Sin'):
 def paginaInicio():
     return render_template('inicial.html')
 
+@app.route('/article1')
+def article1():
+    return render_template('article1.html')
+
 if __name__ == '__main__':
     app.run(debug=True , port=8000)
 
